@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+          color: #fff
+        }
+        
+        html,
+        body {
+          width: 100%;
+          height: 100%;
+        }
+        
+        body {
+          background-color: #333
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        
+        button{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            background-color: rgb(43, 118, 78);
+            padding: 10px 30px;
+            border: 0px;
+            border-radius: 7px;
+        }
+
+        #main button:hover{
+            background-color:  rgb(28, 100, 62);
+        }
+
+        #fileinp{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <input id="fileinp" type="file">
+    <div id="main">
+        <button id="Upload">Upload file</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
