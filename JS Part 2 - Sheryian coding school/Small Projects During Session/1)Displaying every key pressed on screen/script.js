@@ -1,5 +1,6 @@
 let h1 = document.querySelector("h1");
 
+
 window.addEventListener("keydown", function(e){
     // console.log(e.key);
     if (e.key === " "){
