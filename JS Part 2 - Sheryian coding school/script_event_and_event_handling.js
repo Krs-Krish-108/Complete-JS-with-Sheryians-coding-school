@@ -29,3 +29,11 @@ select.addEventListener("change", function(e){
     // device.textContent = "Device Selected";
     device.textContent = `${e.target.value} Device Selected`;
 });
+
+
+//=---------------------------------------------------------------------------
+//. Displaying every key being pressed on the main screen as a background image that can't be selected ---------> Project 1
+
+
+//=---------------------------------------------------------------------------
+//. Creating a customized upload button and making it functional to choose files when clicked -----------------> Project 2
