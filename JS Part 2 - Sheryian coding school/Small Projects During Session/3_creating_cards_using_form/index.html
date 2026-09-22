@@ -10,7 +10,7 @@
           padding: 0;
           box-sizing: border-box;
           font-family: Arial, sans-serif;
-          color: #fff
+          color: #111;
         }
         
         html,
@@ -21,55 +21,143 @@
         }
         
         body {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            background-color: #333
+            background-color: #333;            
         }
 
-        input{
-            display: block;
-            margin: 10px;
-            color: black;
-            padding: 3px;
-        }
-
-        textarea{
-            display: block;
-            margin: 10px;
-            width: 172.4px;
-        }
-        
         #card_form{
-            display: flex;
+            display: block;
             border: 1.3px solid #555;
+            /* margin: 10px; */
+            width: 200px;
+            height: 150px;
+            padding: 10px;
             margin: 10px;
-            width: 210px;
             align-items: center;
             justify-content: center;
             border-radius: 15px;
         }
 
+        .input{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .input input, textarea{
+            margin: 3px;
+            flex: 1;
+        }
+
+
+        #submit{
+            background-color: #555;
+            border: none;
+            margin: 3px;
+        }
+        
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            min-height: 350px;
+            margin: 10px;
+            border: 1.5px solid #fff;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .upper-half{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+        .hrl{
+            /* color: #d0bfbf34; */
+            border: 0.2px solid #d0bfbf34;
+            width: 80%;
+            justify-self: center;
+        }
+        .lower-half{
+            font-size: 11px;
+        }
+
+        .lower-half h4,h3,p{
+            color: #fff;
+        }
+
+        .name{
+            /* margin: 3px 0px;*/
+            padding: 3px 0px;
+            padding-bottom: 1px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .occupation{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight:100;
+        }
+        .about{
+            padding: 7px 0px;
+
+        }
+
+
+        .card1{
+            width: 150px;
+            height: 200px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #c5c4c4;
+            border-radius: 10px;
+            /* color: #fff; */
+
+        }
+
         #profile img{
             width: 50px;
             height: 50px;
+            border: 1.3px solid #f707eb;
             border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <div id="card_form">
-        <form action="">
-            <input type="text" placeholder="Profile Pic">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Occupation">
-            <textarea placeholder="Description"></textarea>
-            <input type="submit">
-        </form>
-    </div>
+    <header>
+        <div id="card_form">
+            <form action="">
+                <div class="input">
+                    <input type="text" placeholder="Profile Pic">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Occupation">
+                    <textarea placeholder="Description"></textarea>
+                    <input id="submit" type="submit">
+                </div>
+            </form>
+        </div>
+        <div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="card1">
+                <div class="upper-half">
+                    <div id="profile">
+                       <img src="https://images.pexels.com/photos/25078941/pexels-photo-25078941.jpeg" alt="">
+                    </div>
+                </div>
+                <hr class="hrl">
+                <div class="lower-half">
+                    <div>
+                        <h3 class="name">Himanshi Rai</h3>
+                        <span><h4 class="occupation">Content creator</h4></span>
+                        <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere aut placeat iusto deleniti sapiente iste inventore magnam dolor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 
-    <div id="main">
-        <div id="profile"><img src="https://images.pexels.com/photos/25078941/pexels-photo-25078941.jpeg" alt=""></div>
-    </div>
+    
 </body>
 </html>
