@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--+ Style for The DOM -->
     <!-- <style>
         .hilu{
             color: blue;
@@ -21,7 +23,10 @@
         }
     </style> -->
 
-    <style>
+
+
+    <!--+ Style for events and event listeners -->
+    <!-- <style>
         /* #abcd1{
             position: absolute;
             transition: cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
@@ -33,8 +38,75 @@
         /* .lt{
             text-decoration: line-through;
         } */
-    </style>
+    </style> -->
 
+
+
+    <!--+ Style for form and form validation -->
+    <style>
+        * {
+          /* margin: 0;
+          padding: 0; */
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+          
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(deepak.jpg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        #hide{
+            display: none;
+            color: red;
+        }
+
+        .form{
+            width: 300px;
+            /* height: inherit; */
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(8px);
+        }
+        .form form{
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        input, textarea, select{
+            border-radius: 2px;
+            border: none;
+            padding: 5px;
+            margin-top: 20px;
+            width: 220px;
+        }
+        h2{
+            color: #fff;
+            margin: 0px;
+        }
+        small{
+            font-size: 7px
+        }
+    </style>
 
 </head>
 <body>
@@ -94,15 +166,36 @@
     <!--: Event Capturing -->
     
 
-
-
-
+<!--=     Form and form validation     -->
+    <div class="form">
+        <form action="">
+            <h2>Email & Password Validator</h2>
+            <input required type="text" placeholder="name" id="name">
+            <div id="hide">
+                <small>Your name should be greater than 2 characters</small>
+            </div>
+            <input required type="email" placeholder="email">
+            
+            <input type="password" placeholder="password">
+            
+            <select required>
+                <option value="default" selected disabled></option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+            </select>
+            <textarea name="" id="" placeholder="Tell us about you..."></textarea>
+            <input type="submit">
+        </form>
+    </div>
 
 
 
     <!-- <script src="script_the_DOM.js"></script> -->
 
-    <script src="script_event_and_event_handling.js"></script>
+    <!-- <script src="script_event_and_event_handling.js"></script> -->
+
+    <script src="script_forms_and_form_validation.js"></script>
 </body>
 </html>
 
