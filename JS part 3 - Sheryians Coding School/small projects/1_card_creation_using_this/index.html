@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          color: #fff;
+        }
+        
+        html,
+        body {
+          min-height: 100vh;
+        }
+        
+        body {
+          background-color: rgb(34, 33, 33);
+        }
+        #main{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .form-container{
+            height: 400px;
+            width: 280px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+            border: 2px solid rgb(75, 74, 74);
+            border-radius: 7px;
+        }
+        #heading{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        label{
+            font-size: small;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 5px;
+        }
+        input {
+            background-color: rgba(81, 79, 79, 0.527);
+            color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 6px;
+        }
+        
+        input[type="submit"] {
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+        }         
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .content{
+            width: auto;
+            min-height: 300px;
+            margin: 5px;
+            border: 1px solid rgb(75, 74, 74);
+            border-radius: 7px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: 200px;
+            height: 220px;
+            margin: 10px;
+            border: 2px solid rgb(75, 74, 74);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+        }
+        .profile{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;  
+            margin-bottom: 10px; 
+        }
+        .bio{
+            margin-top: 10px;
+            font-size: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="main">
+        <div class="form-container">
+            <form action="">
+                <div id="heading"><h1>Users</h1></div>
+                <label for="">Name</label>
+                <input id="name" type="text">
+                <label for="">Role</label>
+                <input id="role" type="text">
+                <label for="">Bio</label>
+                <input id="bio" type="text" style="height: 60px;">
+                <label for="">Profile URL</label>
+                <input id="profile" type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <article class="w-52 min-h-56 m-2.5 border-2 border-cyan-400/50 rounded-xl bg-zinc-800 p-4 flex flex-col items-center text-center shadow-lg shadow-black/30 transition duration-300 hover:-translate-y-1 hover:border-cyan-300 hover:shadow-cyan-400/20">
+        <div>
+            <img class="w-20 h-20 rounded-full mb-4 border-4 border-cyan-200 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson">
+        </div>
+        <div class="flex flex-col items-center">
+            <h2 class="text-lg font-bold font-sans">Alex Johnson</h2>
+            <h4 class="text-sm font-semibold text-cyan-300">Full Stack Developer</h4>
+            <p class="mt-3 text-xs leading-relaxed font-mono text-zinc-300">Passionate about building scalable web applications and exploring new technologies</p>
+        </div>
+        </article>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
