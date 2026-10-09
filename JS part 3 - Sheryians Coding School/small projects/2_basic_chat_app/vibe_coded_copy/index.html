@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenChat | Personal Messenger</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="chat_layout">
+
+        <!-- Chat Application -->
+        <section class="chat_app">
+
+            <!-- Header -->
+            <header class="chat_header">
+
+                <div class="brand">
+                    <div class="brand_icon">
+                        <span>G</span>
+                    </div>
+
+                    <div class="brand_details">
+                        <h1>GreenChat</h1>
+                        <p>
+                            <span class="online_dot"></span>
+                            Personal messaging
+                        </p>
+                    </div>
+                </div>
+
+                <div class="header_status">
+                    <span class="status_icon">●</span>
+                    <span>Connected</span>
+                </div>
+
+            </header>
+
+
+            <!-- Conversation Header -->
+            <div class="conversation_header">
+
+                <div class="conversation_avatar">
+                    <span>✉</span>
+                </div>
+
+                <div class="conversation_details">
+                    <h2>Conversation</h2>
+                    <p>Your private chat space</p>
+                </div>
+
+                <div class="conversation_actions">
+                    <span title="Chat options">⋮</span>
+                </div>
+
+            </div>
+
+
+            <!-- Messages -->
+            <section class="chats" aria-label="Chat messages">
+
+                <div class="empty_state">
+                    <div class="empty_icon">✉</div>
+
+                    <h3>Your conversation starts here</h3>
+
+                    <p>
+                        Send a message using either composer below
+                        to start the conversation.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- Message Composers -->
+            <footer class="send">
+
+                <!-- Sender One -->
+                <div class="users user_one">
+
+                    <div class="composer_label">
+                        <span class="sender_indicator"></span>
+                        <span>Sender One</span>
+                    </div>
+
+                    <form id="form1">
+
+                        <input
+                            type="text"
+                            id="user1"
+                            placeholder="Type a message..."
+                            autocomplete="off"
+                            aria-label="Message from sender one"
+                        >
+
+                        <button type="submit" aria-label="Send message">
+                            <span>➤</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Sender Two -->
+                <div class="users user_two">
+
+                    <div class="composer_label">
+                        <span class="sender_indicator"></span>
+                        <span>Sender Two</span>
+                    </div>
+
+                    <form id="form2">
+
+                        <input
+                            type="text"
+                            id="user2"
+                            placeholder="Type a message..."
+                            autocomplete="off"
+                            aria-label="Message from sender two"
+                        >
+
+                        <button type="submit" aria-label="Send message">
+                            <span>➤</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+
+        <!-- Footer Note -->
+        <p class="app_footer">
+            Simple conversations. Clean design.
+        </p>
+
+    </main>
+
+
+    <script src="scipt.js"></script>
+
+</body>
+</html>
